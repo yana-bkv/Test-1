@@ -315,6 +315,7 @@ def delete_user():
   user_index = int(input())
 
   row = db[user_index]
+  print("User below was deleted: ")
   print(listToString(row))
 
   del_file = open("contact.txt", "r", encoding="utf-8")
